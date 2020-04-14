@@ -7,13 +7,15 @@ Install dependencies
 $ npm install
 ```
 
-Create a `.env` file in the root directory of the project. Copy and setup environment-specific variables from `.env.sample` file or below:
+Rename `.env.sample` file to `.env` and setup environment-specific variables.
+
+For example
 ```dosini
 NODE_ENV=local
-DB_CONNECTION_URI=
-DB_NAME=
-DB_USER=
-DB_PASS=
+DB_CONNECTION_URI=mongodb://localhost/restapi
+DB_NAME=restapi
+DB_USER=dbuser
+DB_PASS=dbpass
 ```
 
 ### Usage
