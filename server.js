@@ -22,11 +22,10 @@ app.use('/users', usersRoute);
 
 // 404 Not found handler
 app.use((req, res, next) => {
-    const err = new Error('404 Not Found');
-
-    err.status = 404;
-
-    next(err);
+    next({
+        status: 404,
+        message: '404 Not Found'
+    });
 });
 
 // Error handler
