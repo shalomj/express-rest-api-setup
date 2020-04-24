@@ -30,11 +30,11 @@ app.use((req, res, next) => {
 
 // Error handler
 app.use((err, req, res, next) => {
-    res.status(err.status || 500);
-    res.send({
-        status: "failed",
-        message: err.message
-    });
+    res.status(err.status || 500)
+        .json({
+            status: "failed",
+            message: err.message
+        });
 });
 
 const PORT = process.env.PORT || 8080;
