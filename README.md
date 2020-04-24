@@ -12,6 +12,7 @@ Rename `.env.sample` file to `.env` and setup environment-specific variables.
 For example
 ```dosini
 NODE_ENV=local
+PORT=5000
 DB_CONNECTION_URI=mongodb://localhost/restapi
 DB_NAME=restapi
 DB_USER=dbuser
